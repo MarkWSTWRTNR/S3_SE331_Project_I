@@ -1,6 +1,5 @@
 <template>
-  <p>Regstration form here</p>
-  <button @click="register">Register Me</button>
+  <div v-for="event in event.vaccine" :key="event"> Dose{{ event.dose }}: {{ event.type }} when {{ event.date}}</div>
 </template>
 
 <script>
@@ -20,7 +19,7 @@ export default {
       // 'You are successfully registered for ' + this.event.title
 
       this.$router.push({
-        name: 'EventDetails',
+        name: 'UserDetails',
         params: { id: this.event.id }
       })
     }
