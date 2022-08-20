@@ -1,6 +1,7 @@
 <template>
-  <p>{{ event.time }} on {{ event.date }} @ {{ event.location }}</p>
-  <p>{{ event.description }}</p>
+  <p>Name: {{ event.name }} {{event.surname}}</p>
+  <p>Age: {{ event.age }}</p>
+  <p>Home Town: {{ event.homeTown }}</p>
 </template>
 
 <script>

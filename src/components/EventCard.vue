@@ -4,8 +4,8 @@
     :to="{ name: 'UserDetails', params: { id: event.id } }"
   >
     <div class="event-card">
-      <span>@{{ event.time }} on {{ event.date }}</span>
-      <h4>{{ event.title }}</h4>
+      <div>{{ event.photo }}</div>
+      <span>{{ event.name }} {{ event.surname }}</span>
     </div>
   </router-link>
 </template>

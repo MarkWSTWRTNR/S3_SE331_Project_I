@@ -1,5 +1,5 @@
 <template>
-  <h1>Events For Good</h1>
+  <h1>List of people who has been vaccinated for COVID-19</h1>
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
     <div class="pagination">
@@ -50,7 +50,7 @@ export default {
 
   // eslint-disable-next-line no-unused-vars
   beforeRouteEnter(routeTo, routeFrom, next) {
-    EventService.getEvents(3, parseInt(routeTo.query.page) || 1)
+    EventService.getEvents(4, parseInt(routeTo.query.page) || 1)
       .then((response) => {
         next((comp) => {
           comp.events = response.data
@@ -62,7 +62,7 @@ export default {
       })
   },
   beforeRouteUpdate(routeTo) {
-    EventService.getEvents(3, parseInt(routeTo.query.page) || 1)
+    EventService.getEvents(4, parseInt(routeTo.query.page) || 1)
       .then((response) => {
         this.events = response.data // <-----
         this.totalEvents = response.headers['x-total-count'] // <-----
@@ -74,7 +74,7 @@ export default {
   computed: {
     hasNextPage() {
       // First, calculate total pages
-      let totalPages = Math.ceil(this.totalEvents / 3) // 2 is events per page
+      let totalPages = Math.ceil(this.totalEvents / 4) // 2 is events per page
 
       // Then check to see if the current page is less than the total pages.
       return this.page < totalPages
