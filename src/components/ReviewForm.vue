@@ -5,21 +5,8 @@
       <label for="date">Date:</label>
       <input id="date" v-model="date" />
 
-      <label for="name">Select Patient Name:</label>
-      <select id="name" v-model.number="name">
-        <option>Marwa Giles</option>
-        <option>Ameen Quintana</option>
-        <option>Chardonnay Dixon</option>
-        <option>Owais Howe</option>
-        <option>Noa Carroll</option>
-        <option>Kayden Vaughn</option>
-        <option>Isabelle Mayo</option>
-        <option>Harun Derrick</option>
-        <option>Mekhi Hawes</option>
-        <option>Ruben Lyons</option>
-        <option>Imaan Hodgson</option>
-        <option>Shantelle Villarreal</option>
-      </select>
+      <label for="name">Doctor's Name:</label>
+      <input id="name" v-model="name" />
 
       <label for="suggestion">Suggestion:</label>
       <textarea id="suggestion" v-model="suggestion"></textarea>
@@ -41,7 +28,7 @@ export default {
   },
   methods: {
     onSubmit() {
-      if (this.name === null || this.suggestion === '' || this.date === '') {
+      if (this.name === '' || this.suggestion === '' || this.date === '') {
         alert('This Form is incomplete. Please fill out evert field.')
         return
       }
@@ -53,7 +40,7 @@ export default {
       }
       this.$emit('review-submited', productReview)
 
-      this.name = null
+      this.name = ''
       this.suggestion = ''
       this.date = ''
       this.GStore.flashMessage = "Doctor's suggestion successfully! "
