@@ -31,5 +31,9 @@ export default{
   width: 425px;
   margin-top: 20px;
 }
+
+li{
+    text-align: left;
+}
 </style>
 
