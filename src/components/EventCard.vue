@@ -4,7 +4,6 @@
     :to="{ name: 'UserDetails', params: { id: event.id } }"
   >
     <div class="event-card">
-      <div>{{ event.photo }}</div>
       <span>{{ event.name }} {{ event.surname }}</span>
     </div>
   </router-link>

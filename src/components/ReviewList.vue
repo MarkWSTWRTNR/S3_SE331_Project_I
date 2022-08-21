@@ -1,13 +1,13 @@
 <template>
     <div class="review-container">
-        <h3>Reviews: </h3>
+        <h3>Doctor's Suggestion: </h3>
             <ul>
                 <li v-for="(review, index) in reviews" :key="index">
-                    {{ review.name }} gave this {{ review.rating }} stars
+                    Date: {{ review.date }}
                     <br/>
-                    "{{ review.review }}"
+                    Patient Name: {{ review.name }}
                     <br/>
-                    Recomend form {{ review.name }} to do something better is {{ review.recommend }}
+                    Dortor's Suggestion: "{{ review.suggestion }}"
                     <br/>
                 </li>
             </ul>
