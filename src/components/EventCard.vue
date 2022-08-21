@@ -29,6 +29,7 @@ export default {
   cursor: pointer;
   border: 5px solid #002a5e;
   margin-bottom: 18px;
+  margin: auto;
 }
 
 .event-card:hover {
@@ -40,6 +41,7 @@ export default {
 .event-link {
   color: #034689;
   text-decoration: none;
+  margin: auto;
 }
 
 img {
