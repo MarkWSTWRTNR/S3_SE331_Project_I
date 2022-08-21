@@ -95,7 +95,7 @@ export default {
 .pagination a {
   flex: 1;
   text-decoration: none;
-  color: #2c3e50;
+  color: #0b4e91;
 }
 
 #page-prev {
