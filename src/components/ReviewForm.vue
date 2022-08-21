@@ -49,6 +49,9 @@ export default {
 </script>
 
 <style scoped>
+input{
+    text-align: center;
+}
 body {
     background-color: #f2f2f2;
     margin: 0px;
