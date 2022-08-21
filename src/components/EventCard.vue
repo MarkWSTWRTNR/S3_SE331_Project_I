@@ -4,6 +4,7 @@
     :to="{ name: 'UserDetails', params: { id: event.id } }"
   >
     <div class="event-card">
+      <img src="../assets/icon.png" alt="" srcset=""> <br>
       <span>{{ event.name }} {{ event.surname }}</span>
     </div>
   </router-link>
@@ -23,7 +24,7 @@ export default {
 
 <style scoped>
 .event-card {
-  padding: 50px;
+  padding: 20px;
   width: 200px;
   cursor: pointer;
   border: 5px solid #002a5e;
@@ -39,5 +40,10 @@ export default {
 .event-link {
   color: #034689;
   text-decoration: none;
+}
+
+img {
+  width: 100px;
+  height: 100px;
 }
 </style>

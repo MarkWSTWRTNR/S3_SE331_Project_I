@@ -83,7 +83,7 @@ body {
 }
 
 .review-container li {
-    margin-bottom: 100px;
+    margin-top: 15px;
 }
 
 .review-form .button {
