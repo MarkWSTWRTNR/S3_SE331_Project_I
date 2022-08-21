@@ -1,5 +1,5 @@
 <template>
-  <div v-for="event in event.vaccine" :key="event"> Dose{{ event.dose }}: {{ event.type }} when {{ event.date}}</div>
+  <div id="vaccine-card" v-for="event in event.vaccine" :key="event"> Dose{{ event.dose }}: {{ event.type }} when {{ event.date}}</div>
 </template>
 
 <script>
@@ -26,3 +26,14 @@ export default {
   }
 }
 </script>
+
+<style>
+#vaccine-card {
+  background-color: #add8e6;
+  padding: 20px;
+  margin: auto;
+  border: 2px solid #000000;
+  width: 425px;
+  margin-bottom: 10px;
+}
+</style>

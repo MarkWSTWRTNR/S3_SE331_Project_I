@@ -46,7 +46,7 @@ export default {
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: #3f4798;
 }
 h4 {
   font-size: 20px;
