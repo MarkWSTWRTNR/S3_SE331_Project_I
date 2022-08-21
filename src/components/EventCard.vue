@@ -5,7 +5,8 @@
   >
     <div class="event-card">
       <img src="../assets/icon.png" alt="" srcset=""> <br>
-      <span>{{ event.name }} {{ event.surname }}</span>
+      <span>{{ event.name }} {{ event.surname }}</span> <br>
+      <span v-for="event in event.vaccine" :key="event"> Dose{{ event.dose }}: {{ event.type }} <br></span>
     </div>
   </router-link>
 </template>
@@ -26,6 +27,7 @@ export default {
 .event-card {
   padding: 20px;
   width: 200px;
+  height: 150px;
   cursor: pointer;
   border: 5px solid #002a5e;
   margin-bottom: 18px;

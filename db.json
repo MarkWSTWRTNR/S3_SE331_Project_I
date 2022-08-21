@@ -6,8 +6,7 @@
       "surname": "Giles",
       "age": "18",
       "homeTown": "Mount Stone",
-      "vaccine": [{"dose":1,"type":"Pfizer","date":"Jun 14, 2022"},{"dose":2,"type":"Pfizer","date": "Sep 20, 2022"}],
-      "img": "logo.png"
+      "vaccine": [{"dose":1,"type":"Pfizer","date":"Jun 14, 2022"},{"dose":2,"type":"Pfizer","date": "Sep 20, 2022"}]
     },
     {
       "id": 2,
