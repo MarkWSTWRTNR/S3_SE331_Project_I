@@ -6,7 +6,8 @@
       "surname": "Giles",
       "age": "18",
       "homeTown": "Mount Stone",
-      "vaccine": [{"dose":1,"type":"Pfizer","date":"Jun 14, 2022"},{"dose":2,"type":"Pfizer","date": "Sep 20, 2022"}]
+      "vaccine": [{"dose":1,"type":"Pfizer","date":"Jun 14, 2022"},{"dose":2,"type":"Pfizer","date": "Sep 20, 2022"}],
+      "doctor_com":[]
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "surname": "Quintana",
       "age": "20",
       "homeTown": "St Stour",
-      "vaccine": [{"dose":1,"type":"Modena","date":"Jan 30, 2022"}]
+      "vaccine": [{"dose":1,"type":"Modena","date":"Jan 30, 2022"}],
+      "doctor_com":[]
 
     },
     {

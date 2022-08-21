@@ -4,24 +4,24 @@
     <EventCard v-for="event in events" :key="event.id" :event="event" />
   </div>
   <div class="pagination">
-      <router-link
-        id="page-prev"
-        :to="{ name: 'EventList', query: { page: page - 1 } }"
-        rel="prev"
-        v-if="page != 1"
-      >
-        Prev Page</router-link
-      >
+    <router-link
+      id="page-prev"
+      :to="{ name: 'EventList', query: { page: page - 1 } }"
+      rel="prev"
+      v-if="page != 1"
+    >
+      Prev Page</router-link
+    >
 
-      <router-link
-        id="page-next"
-        :to="{ name: 'EventList', query: { page: page + 1 } }"
-        rel="next"
-        v-if="hasNextPage"
-      >
-        Next Page</router-link
-      >
-    </div>
+    <router-link
+      id="page-next"
+      :to="{ name: 'EventList', query: { page: page + 1 } }"
+      rel="next"
+      v-if="hasNextPage"
+    >
+      Next Page</router-link
+    >
+  </div>
 </template>
 
 <script>

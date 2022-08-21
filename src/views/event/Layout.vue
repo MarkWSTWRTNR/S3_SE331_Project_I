@@ -4,9 +4,13 @@
     <div id="nav">
       <router-link :to="{ name: 'UserDetails' }">User details</router-link>
       |
-      <router-link :to="{ name: 'VaccineInjection' }">Vaccine injection</router-link>
+      <router-link :to="{ name: 'VaccineInjection' }"
+        >Vaccine injection</router-link
+      >
       |
-      <router-link :to="{ name: 'DoctorComment' }">Doctor's recommentation</router-link>
+      <router-link :to="{ name: 'DoctorComment' }"
+        >Doctor's recommentation</router-link
+      >
     </div>
     <router-view :event="GStore.event" />
   </div>

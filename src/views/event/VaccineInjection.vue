@@ -1,5 +1,7 @@
 <template>
-  <div id="vaccine-card" v-for="event in event.vaccine" :key="event"> Dose{{ event.dose }}: {{ event.type }} when {{ event.date}}</div>
+  <div id="vaccine-card" v-for="event in event.vaccine" :key="event">
+    Dose{{ event.dose }}: {{ event.type }} when {{ event.date }}
+  </div>
 </template>
 
 <script>

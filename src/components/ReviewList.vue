@@ -1,24 +1,26 @@
 <template>
-    <div class="review-container">
-        <div id="doctorSuggest-card">
-            <h3>Doctor's Suggestion: </h3>
-                <ul>
-                    <li v-for="(review, index) in reviews" :key="index">
-                        Date: {{ review.date }}
-                        <br/>
-                        Doctor's Name: {{ review.name }}
-                        <br/>
-                        Dortor's Suggestion: "{{ review.suggestion }}"
-                        <br/>
-                    </li>
-                </ul>    
-            </div>
-        </div>
+  <div class="review-container">
+    <div id="doctorSuggest-card">
+      <h3>Doctor's Suggestion:</h3>
+      <ul>
+        <li v-for="(review, index) in reviews" :key="index">
+          Date: {{ review.date }}
+          <br />
+          Doctor's Name: {{ review.name }}
+          <br />
+          Dortor's Suggestion: "{{ review.suggestion }}"
+          <br />
+          <!-- <p>{{ review.patient_id }}</p> -->
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
-export default{
-    props: ['reviews']
+export default {
+  inject: ['GStore'],
+  props: ['reviews']
 }
 </script>
 
@@ -32,8 +34,7 @@ export default{
   margin-top: 20px;
 }
 
-li{
-    text-align: left;
+li {
+  text-align: left;
 }
 </style>
-

@@ -17,10 +17,12 @@
 </template>
 
 <script>
+import GStore from '@/store'
 export default {
   inject: ['GStore'],
   data() {
     return {
+      patient_id: '',
       name: null,
       suggestion: '',
       date: ''
@@ -36,10 +38,11 @@ export default {
       let productReview = {
         name: this.name,
         suggestion: this.suggestion,
-        date: this.date
+        date: this.date,
+        patient_id: GStore.event.id
       }
       this.$emit('review-submited', productReview)
-
+      this.patient_id = ''
       this.name = ''
       this.suggestion = ''
       this.date = ''
@@ -53,8 +56,8 @@ export default {
 </script>
 
 <style scoped>
-input{
-    text-align: center;
+input {
+  text-align: center;
 }
 body {
   background-color: #f2f2f2;

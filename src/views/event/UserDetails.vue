@@ -1,6 +1,6 @@
 <template>
   <div id="details-card">
-    <p>Name: {{ event.name }} {{event.surname}}</p>
+    <p>Name: {{ event.name }} {{ event.surname }}</p>
     <p>Age: {{ event.age }}</p>
     <p>Home Town: {{ event.homeTown }}</p>
   </div>

@@ -4,9 +4,11 @@
     :to="{ name: 'UserDetails', params: { id: event.id } }"
   >
     <div class="event-card">
-      <img src="../assets/icon.png" alt="" srcset=""> <br>
-      <span>{{ event.name }} {{ event.surname }}</span> <br>
-      <span v-for="event in event.vaccine" :key="event"> Dose{{ event.dose }}: {{ event.type }} <br></span>
+      <img src="../assets/icon.png" alt="" srcset="" /> <br />
+      <span>{{ event.name }} {{ event.surname }}</span> <br />
+      <span v-for="event in event.vaccine" :key="event">
+        Dose{{ event.dose }}: {{ event.type }} <br
+      /></span>
     </div>
   </router-link>
 </template>
