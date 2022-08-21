@@ -4,7 +4,7 @@
             <h3>Doctor's Suggestion Form</h3>
             <label for="date">Date:</label>
             <input id="date" v-model="date">
-            
+
             <label for="name">Name:</label>
             <input id="name" v-model="name">
 
@@ -17,33 +17,33 @@
 </template>
 
 <script>
-export default{
+export default {
     data() {
-            return {
-                name: '',
-                suggestion: '',
-                date: ''
-            }
-        },
-        methods:{
-            onSubmit(){
-                if (this.name === '' || this.suggestion === '' || this.date === ''){
-                    alert('This Form is incomplete. Please fill out evert field.')
-                    return
-                }
-
-                let productReview = {
-                    name: this.name,
-                    suggestion: this.suggestion,
-                    date: this.date
-                }
-                this.$emit('review-submited', productReview)
-
-                this.name=''
-                this.suggestion=''
-                this.date=''
-            }
+        return {
+            name: '',
+            suggestion: '',
+            date: ''
         }
+    },
+    methods: {
+        onSubmit() {
+            if (this.name === '' || this.suggestion === '' || this.date === '') {
+                alert('This Form is incomplete. Please fill out evert field.')
+                return
+            }
+
+            let productReview = {
+                name: this.name,
+                suggestion: this.suggestion,
+                date: this.date
+            }
+            this.$emit('review-submited', productReview)
+
+            this.name = ''
+            this.suggestion = ''
+            this.date = ''
+        }
+    }
 }
 
 </script>
@@ -55,6 +55,7 @@ body {
     font-family: tahoma;
     color: #282828;
 }
+
 .review-form {
     display: flex;
     flex-direction: column;
@@ -66,6 +67,8 @@ body {
     -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
     -moz-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
     box-shadow: 2px 15px -12px rgba(0, 0, 0, 0.57);
+    margin: auto;
+    padding: 3%;
 }
 
 .review-container {

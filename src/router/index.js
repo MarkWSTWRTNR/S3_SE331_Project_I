@@ -16,7 +16,7 @@ const routes = [{
         props: (route) => ({ page: parseInt(route.query.page) || 1 })
     },
     {
-        path: '/event/:id',
+        path: '/patient/:id',
         name: 'EventLayout',
         props: true,
         component: EventLayout,
@@ -44,13 +44,13 @@ const routes = [{
                 component: UserDetails
             },
             {
-                path: 'register',
+                path: 'vaccineinjection',
                 name: 'VaccineInjection',
                 props: true,
                 component: VaccineInjection
             },
             {
-                path: 'edit',
+                path: 'doctorcomment',
                 name: 'DoctorComment',
                 props: true,
                 component: DoctorComment
