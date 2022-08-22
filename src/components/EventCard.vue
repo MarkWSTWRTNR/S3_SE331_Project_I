@@ -34,6 +34,7 @@ export default {
   border: 5px solid #002a5e;
   margin-bottom: 18px;
   margin: auto;
+  background-color: #7694b9;
 }
 
 .event-card:hover {

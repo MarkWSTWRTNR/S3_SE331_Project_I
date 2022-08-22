@@ -101,6 +101,7 @@ export default {
   flex: 1;
   text-decoration: none;
   color: #0b4e91;
+  font-weight: bold;
 }
 
 #page-prev {
