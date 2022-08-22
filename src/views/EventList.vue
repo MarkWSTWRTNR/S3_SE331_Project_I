@@ -102,8 +102,9 @@ export default {
   text-decoration: none;
   color: #0b4e91;
   font-weight: bold;
+  padding-top: 30px;
+  font-size: large;
 }
-
 #page-prev {
   text-align: left;
 }
