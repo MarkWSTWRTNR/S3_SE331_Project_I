@@ -3,4 +3,4 @@ services:
     web:
         image: "markwst/se331-project:latest"
         ports:
-            - 8002:80
+            - 8003:80
