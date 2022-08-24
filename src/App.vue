@@ -29,6 +29,9 @@ export default {
 body{
   background-image: url('../src/assets/bg.jpg');
   background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #flashMessage {
   animation-name: yellowfade;
